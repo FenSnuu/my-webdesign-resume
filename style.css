@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Lato:wght@300;700&display=swap');
+body{
+font-family: 'source sans pro', sans-serif;
+margin: 0;
+border-top: 10px solid silver;
+border-bottom: 10px solid silver;
+}
+/* Website Links except the nav */
+
+a:link{
+  color: orange;
+}
+a:visited{
+  color: orange;
+}
+a:hover{
+  color: violet;
+}
+a:active{
+  color: pink;
+}
+header{
+  text-align: center;
+  color: chocolate;
+}
+nav{
+  background-color: limegreen;
+  border-top: 3px solid violet;
+  border-bottom: 3px solid violet;
+  padding: 5px;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 8px 0;
+  padding: 0;
+}
+nav li{
+  display: inline;
+  padding: 5px;
+}
+nav a{
+  text-decoration: none;
+}
+nav a:link{
+  color: orange;
+}
+nav a:visited{
+  color: orange;
+}
+nav a:hover{
+  color: cyan;
+}
+nav a:active{
+  color: pink;
+}
+/* main */
+main{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+/* footer */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #8f8f8f;
+  color: white;
+}
+/* css without a media query--applies to all sizes unless overritten */
+h1{
+font-size: 4em;
+color: pink;
+}
+/* css adjustments for tablets */
+@media only screen and (max-width: 1024px) {
+  h1{
+    font-size: 2em;
+  }
+}
+/* css adjustments for phones */
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 1.5em;
+  }
+}
+
+.home-hero{
+  background-image: url(images/home-hero.jpg);
+  background-size: cover;
+}
+.home-hero h1{
+  font-family: 'sans-serif', fantasy;
+  color: purple;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0;
+}
+.home-photo{
+    float: right;
+    max-width: 50%;
+    height: auto;
+    margin: 50px 0 10px 20px;
+}
+canvas {
+  border: 1px solid #d3d3d3;
+  background-color: #f1f1f1;
+  background-image: url(images/mountain.jpg);
+  background-size: cover;
+}
+.logo{
+   margin: 0 auto;
+   display:block;
+}
+footer .fa{
+  font-size: 6em;
+  color:rebeccapurple;
+}
+.row {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+
+.col-sm-4 {
+    flex: 0 0 auto;
+    width: calc(25% - 15px); 
+    max-width: 250px; 
+}
+
+
+.col-sm-4 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mobile{
+    display: block;
+    touch-action: manipulation;
+}
